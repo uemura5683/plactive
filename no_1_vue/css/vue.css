@@ -1,0 +1,127 @@
+/* css */
+/* common */
+body {
+  background: black;
+  color: white;
+}
+#app {
+  margin: 0 1rem;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+.search .result {
+  line-height: 23px;
+  height: 23px;
+}
+
+.search .target {
+  display: inline-block;
+    vertical-align: bottom;
+}
+.search .target label {
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+.search .target input {
+  margin: 0 5px 0 0;
+  height: 16px;
+}
+.search .target .label {
+  margin-right: 15px;
+}
+.search .sort {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 0 0 10px;
+}
+.item {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 25%;
+}
+.item .image {
+  position: relative;
+  text-align: center;
+  margin: 1em 10px;
+}
+.item .image img {
+  width: 100%;
+  height: auto;
+}
+.item .status {
+  position: absolute;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bf0000;
+  color: white;
+}
+.item .details {
+  text-align: center;
+}
+.item .price {
+  display: inline-block;
+}
+.item .price .span {
+  font-size: 180%;
+}
+.item .shipping-fee {
+  display: inline-block;
+  background: #f7cd12;
+  color: black;
+}
+.item .shipping-fee.none {
+  background: #bf0000;
+  color: white;
+}
+
+.error {
+  margin: 10px 0 0;
+}
+
+@media (max-width: 767px) {
+  .list {
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list::after {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+  .item {
+    margin: 2%;
+    flex: 46%;
+  }
+  .item figure.image {
+    margin: 0rem;
+  }
+  .item figcaption {
+    margin: 1rem 0 0;
+  }
+  .search {
+  	flex-direction:column;
+  }
+}
+
+@media (max-width: 480px) {
+	.condition > * {
+		width: 100%;
+		margin: 10px 0 0;
+	}
+	.search .sort {
+		margin: 10px 0 0;
+	}
+}

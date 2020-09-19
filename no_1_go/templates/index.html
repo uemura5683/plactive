@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>golang template test</title>
+</head>
+<body>
+    <h1>Golang Template Sample</h1>
+    <p>Title --[{{.Title}}]</p>
+    <p>Message--[{{.Message}}] </p>
+    <div>
+        <h3>Items</h3>
+        {{range .List}}
+        <p>{{.}}</p>
+        {{end}}
+    </div>
+    <div>
+        Link: {{.Link}}
+    </div>
+</body>
+</html>
